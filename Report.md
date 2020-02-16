@@ -13,7 +13,7 @@ The environment is considered solved, when the average (over 100 episodes) of th
 The [DDPG](https://spinningup.openai.com/en/latest/algorithms/ddpg.html#id1) algorithm is an policy based method that implements and actor-critic archicteture.  
 
 The pseudocode is [described](https://spinningup.openai.com/en/latest/algorithms/ddpg.html#pseudocode) as follows:  
- ![Pseudocode](/images/ddpg.png)  
+ ![Pseudocode](/images/pseudocode.png)  
 
 The [MADDPG](https://arxiv.org/pdf/1706.02275.pdf) algorithm is based on the DDPG considering some changes to overcome the challenges of non-stationary enviroments:  
 _We adopt the framework of centralized training with decentralized execution, allowing the policies
@@ -33,7 +33,7 @@ approach compared to existing methods in cooperative as well as competitive scen
 populations are able to discover complex physical and communicative coordination strategies._  
 
 The MADDPG algorithm is available at the appendis of the [paper](https://arxiv.org/pdf/1706.02275.pdf):  
- ![MADDPG](/images/algorithm.png)  
+ ![MADDPG](/images/algorithm.PNG)  
 
 The code is available ate the _ddpg_agent.py_ and _maddpg_agent.py_ files  
   
@@ -63,6 +63,10 @@ WEIGHT_DECAY = 1.0        # L2 weight decay
 ## Rewards
 The resulting plot of the rewards during the trainings is as follows:  
 ![Pseudocode](/image/results.PNG)
-
+  
+  The enviroment was solved in in 1638 episodes with an Average Score of 0.50  
+  
 ## Future work  
 Trying to optimize the hyperparameters in a more controlled and systematic way (genetic algorithms, grid search, etc), implementing the the soccer game and allow multiple learnings at each step.
+  
+  References: [fdasilva59](https://github.com/fdasilva59/Udacity-DRL-Collaboration-and-Competition)
