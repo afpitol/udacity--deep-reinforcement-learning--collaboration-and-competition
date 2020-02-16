@@ -62,7 +62,7 @@ WEIGHT_DECAY = 1.0        # L2 weight decay
  
 ## Rewards
 The resulting plot of the rewards during the trainings is as follows:  
-![Pseudocode](/image/results.PNG)
+![Reward](/images/reward.PNG)
   
   The enviroment was solved in in 1638 episodes with an Average Score of 0.50  
   
